@@ -3,8 +3,18 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "Thousand Eyes"
 include(":app")
+include(":core")
+include(":constants")
+include(":movie")
+include(":movie:movie-datasource")
+include(":movie:movie-datasource-test")
+include(":movie:movie-domain")
+include(":movie:movie-interactors")
+include(":movie:ui-movieList")
+include(":movie:ui-movieDetail")
+
+include(":components")
