@@ -12,7 +12,7 @@ data class Movie(
     val voteAverage: Double? = null,
     val originalName: String? = null,
     val popularity: Double? = null,
-    val name: String? = null,
+    val name: String = "",
     val id: Int? = null,
     val voteCount: Int? = null,
     val originalTitle: String? = null,

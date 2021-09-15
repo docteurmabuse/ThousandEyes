@@ -5,6 +5,7 @@ import com.laurenttizzone.thousandeyes.core.ProgressBarState
 import com.laurenttizzone.thousandeyes.core.UIComponent
 import com.laurenttizzone.thousandeyes.movie_domain.Movie
 import com.laurenttizzone.thousandeyes.movie_domain.network.MovieService
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
@@ -15,6 +16,9 @@ class GetMovies(
     fun execute(): Flow<DataState<List<Movie>>> = flow {
         try {
             emit(DataState.Loading(progressBarState = ProgressBarState.Loading))
+
+            delay(1000)
+
             val movies: List<Movie> = try {
                 service.getTrendingMovies()
             } catch (e: Exception) {

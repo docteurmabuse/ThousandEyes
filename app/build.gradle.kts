@@ -42,6 +42,10 @@ android {
 }
 
 dependencies{
+    implementation(project(Modules.core))
+    implementation(project(Modules.movieDomain))
+    implementation(project(Modules.movieInteractors))
+
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.appCompat)
     implementation(AndroidX.lifecycleVmKtx)

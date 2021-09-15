@@ -41,7 +41,7 @@ data class MovieDto(
     val popularity: Double? = null,
 
     @SerialName("name")
-    val name: String? = null,
+    val name: String = "",
 
     @SerialName("id")
     val id: Int? = null,
