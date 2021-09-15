@@ -63,7 +63,7 @@ data class MovieDto(
 
     @SerialName("adult")
     val adult: Boolean? = null
-) {
+)
     fun MovieDto.toMovie(): Movie {
         return Movie(
             firstAirDate,
@@ -86,5 +86,4 @@ data class MovieDto(
             releaseDate,
             adult,
         )
-    }
 }

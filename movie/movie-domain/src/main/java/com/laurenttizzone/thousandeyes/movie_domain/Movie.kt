@@ -21,4 +21,5 @@ data class Movie(
     val releaseDate: String? = null,
     val adult: Boolean? = null,
 ) {
+
 }
