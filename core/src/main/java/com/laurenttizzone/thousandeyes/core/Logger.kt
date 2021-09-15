@@ -1,4 +1,4 @@
-package com.tizzone.core
+package com.laurenttizzone.thousandeyes.core
 
 class Logger(
     private val tag: String,

@@ -1,4 +1,4 @@
-package com.tizzone.core
+package com.laurenttizzone.thousandeyes.core
 
 sealed class UIComponent {
     data class Dialog(
